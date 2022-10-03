@@ -1,0 +1,62 @@
+ <form novalidate autocomplete="off" #form="ngForm" (submit)="onSubmit(form)"  >
+    <input type="hidden" name="userId" [value]="service.formData.userId" />
+    
+    <div class="form-group">
+        <label>CLIENT NAME</label>
+        <input class="form-control form-control-lg" placeholder="Full Name"
+        name= "description" #description= "ngModel" [(ngModel)] = "service.formData.description" 
+        required [class.invalid]= "description.invalid && description.touched" >
+    </div>
+    
+    
+    
+    <div class=" form-row">   
+        <div class="form-group col-5">
+            <label>COVERAGE TYPE</label>
+            <input class="form-control form-control-lg" placeholder="Coverage"
+            name= "coverage" #coverage= "ngModel" [(ngModel)] = "service.formData.coverage" 
+            required [minlength]="1" [maxLength]="10" [class.invalid]= "coverage.invalid && coverage.touched" >
+        </div>
+
+        <div class="form-group col-2">
+            <label>VALIDITY TIME</label>
+            <input class="form-control form-control-lg" placeholder="DD/MM/YY"
+            name= "validityTime" #validityTime= "ngModel" [(ngModel)] = "service.formData.validityTime" 
+            required [minlength]="8" [maxLength]="8" [class.invalid]= "validityTime.invalid && validityTime.touched" >
+        </div>
+
+        <div class="form-group col 3">            
+            <label>COVERAGE TIME</label>
+            <input class="form-control form-control-lg" placeholder="Months"
+            name= "coverageTime" #coverageTime= "ngModel" [(ngModel)] = "service.formData.coverageTime" 
+            required [minlength]="1" [maxLength]="2" [class.invalid]= "coverageTime.invalid && coverageTime.touched" >
+        </div>
+   
+        <div class="form-group col 4">
+            <label>PRICE</label>
+            <input class="form-control form-control-lg" placeholder=" $ (USD)"
+            name= "price" #price= "ngModel" [(ngModel)] = "service.formData.price" 
+            required [minlength]="1" [maxLength]="10" [class.invalid]= "price.invalid && price.touched" >
+        </div>
+   
+        <div class="form-group col-2">
+            <label>RISK</label>
+            <select class="form-control custom-select custom-select-lg mb-3"
+            name= "risk" #risk= "ngModel" [(ngModel)] = "service.formData.risk">
+            <option value=""> -Select- </option>
+            <option value="Low"> Low </option>
+            <option value="Medium"> Medium </option>
+            <option value="Medium-High"> Medium-High </option>
+            <option value="High"> High </option>
+            </select>
+        </div>
+   
+    </div>
+ 
+
+    <div class="form-group">
+        <button class="btn btn-info btn-lg btn-block" type="submit" [disabled]="form.invalid">SUBMIT</button>
+
+    </div>
+
+</form>

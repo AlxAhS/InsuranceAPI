@@ -1,0 +1,38 @@
+<div class="jumbotron py-4">
+    <h1 class="display-3 text-center"><img src="/assets/img/sec1.png"> INSURANCE REGISTER</h1>
+</div>
+
+<div class="col 5">
+    <app-insurance-detail-form></app-insurance-detail-form>
+</div>
+
+<div class="col 5">
+    <table class="table">
+        <thead class = "thead-light">
+            <tr>
+                <th>User Name</th>
+                <th>Coverage</th>
+                <th>Validity Time</th>
+                <th>Coverage Time</th>
+                <th>Price</th>
+                <th>Risk</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let ddb of service.list">
+                <td (click)="populateForm(ddb)">{{ddb.description}}</td>
+                <td (click)="populateForm(ddb)">{{ddb.coverage}}</td>
+                <td (click)="populateForm(ddb)">{{ddb.validityTime}}</td>
+                <td (click)="populateForm(ddb)">{{ddb.coverageTime}}</td>
+                <td (click)="populateForm(ddb)">{{ddb.price}}</td>
+                <td (click)="populateForm(ddb)">{{ddb.risk}}</td>
+                <td>
+                    <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(ddb.userId)"></i>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
+ 
