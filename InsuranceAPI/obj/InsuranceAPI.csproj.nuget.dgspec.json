@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev_\\Insurance\\InsuranceAPI\\InsuranceAPI.csproj": {}
+    "C:\\Dev_\\InsuranceAPI\\InsuranceAPI\\InsuranceAPI.csproj": {}
   },
   "projects": {
-    "C:\\Dev_\\Insurance\\InsuranceAPI\\InsuranceAPI.csproj": {
+    "C:\\Dev_\\InsuranceAPI\\InsuranceAPI\\InsuranceAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev_\\Insurance\\InsuranceAPI\\InsuranceAPI.csproj",
+        "projectUniqueName": "C:\\Dev_\\InsuranceAPI\\InsuranceAPI\\InsuranceAPI.csproj",
         "projectName": "InsuranceAPI",
-        "projectPath": "C:\\Dev_\\Insurance\\InsuranceAPI\\InsuranceAPI.csproj",
+        "projectPath": "C:\\Dev_\\InsuranceAPI\\InsuranceAPI\\InsuranceAPI.csproj",
         "packagesPath": "C:\\Users\\work_AhT\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev_\\Insurance\\InsuranceAPI\\obj\\",
+        "outputPath": "C:\\Dev_\\InsuranceAPI\\InsuranceAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\work_AhT\\AppData\\Roaming\\NuGet\\NuGet.Config",
