@@ -10291,11 +10291,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\work_AhT\\Downloads\\Development\\Repositorios Visual Studio\\Insurance\\InsuranceAPI\\InsuranceAPI.csproj",
+      "projectUniqueName": "C:\\Dev_\\Insurance\\InsuranceAPI\\InsuranceAPI.csproj",
       "projectName": "InsuranceAPI",
-      "projectPath": "C:\\Users\\work_AhT\\Downloads\\Development\\Repositorios Visual Studio\\Insurance\\InsuranceAPI\\InsuranceAPI.csproj",
+      "projectPath": "C:\\Dev_\\Insurance\\InsuranceAPI\\InsuranceAPI.csproj",
       "packagesPath": "C:\\Users\\work_AhT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\work_AhT\\Downloads\\Development\\Repositorios Visual Studio\\Insurance\\InsuranceAPI\\obj\\",
+      "outputPath": "C:\\Dev_\\Insurance\\InsuranceAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\work_AhT\\AppData\\Roaming\\NuGet\\NuGet.Config",
