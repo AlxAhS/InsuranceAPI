@@ -25,9 +25,6 @@ export class InsuranceDetailService {
     return this.http.delete(`${this.baseURL}/${id}`);
   }
 
-
-
-
   refreshList(){
     this.http.get(this.baseURL)
     .toPromise()
